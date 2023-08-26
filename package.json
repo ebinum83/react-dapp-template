@@ -1,0 +1,47 @@
+{
+  "name": "react-dapp-template",
+  "version": "0.1.0",
+  "homepage": "https://ebinum83.github.io/react-dapp-template",
+  "author": "ebinum83",
+  "private": true,
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.9.3",
+    "@truffle/hdwallet-provider": "^2.1.13",
+    "bootstrap": "^5.3.1",
+    "dotenv": "^16.3.1",
+    "gh-pages": "^6.0.0",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.8.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "shelljs": "^0.8.5",
+    "web3": "^1.10.0"
+  },
+  "scripts": {
+    "clean": "rm -rf ./build",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -b master -d build",
+    "start": "react-scripts start",
+    "build": "yarn clean && react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
